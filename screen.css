@@ -15,6 +15,15 @@ img {
   max-width: 100%;
 }
 
+.images {
+  background: #222;
+  overflow: auto;
+  padding: 5px;
+}
+.images li {
+  padding: 5px;
+}
+
 @media screen and (min-width: 600px) {
   .images li {
     float: left;
