@@ -8,6 +8,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/* State */
+.nojs {
+  color: red;
+}
+.js {
+  color: blue;
+}
+
 /* Responsive Image Styles */
 
 img {
