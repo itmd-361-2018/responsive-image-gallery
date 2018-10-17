@@ -7,3 +7,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+/* Responsive Image Styles */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .images li {
+    float: left;
+    width: 50%;
+  }
+  figcaption {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .images li {
+    width: 33.333333333%
+  }
+}
