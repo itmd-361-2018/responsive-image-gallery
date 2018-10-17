@@ -41,6 +41,15 @@ img {
   figcaption {
     clear: both;
   }
+  @supports(display: flex) {
+    .images {
+      display: flex;
+      flex-flow: row wrap-reverse;
+    }
+    .images li {
+      flex: 1 0 auto;
+    }
+  }
 }
 
 @media screen and (min-width: 1000px) {
