@@ -34,21 +34,17 @@ img {
 }
 
 @media screen and (min-width: 600px) {
+  .images {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
   .images li {
+    flex: 1 0 auto;
     float: left;
     width: 50%;
   }
   figcaption {
     clear: both;
-  }
-  @supports(display: flex) {
-    .images {
-      display: flex;
-      flex-flow: row wrap-reverse;
-    }
-    .images li {
-      flex: 1 0 auto;
-    }
   }
 }
 
