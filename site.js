@@ -7,3 +7,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
     html.className = classes + ' flexbox';
   }
 });
+
+function show_current_image_src(img) {
+  var img = document.querySelector('img[src="img/'+img+'"]');
+  return img.currentSrc;
+}
