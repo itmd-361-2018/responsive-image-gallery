@@ -53,3 +53,20 @@ img {
     width: 33.333333333%
   }
 }
+
+
+/* Image Gallery Sizes */
+/*
+             @1x   @2x    @3x
+Up to 599px: 580px 1160px 1740px
+At 600px:    285px  570px  855px
+Up to 999px: 485px  970px 1455px
+At 1000px:   320px  640px  960px
+
+
+
+
+
+
+
+*/
