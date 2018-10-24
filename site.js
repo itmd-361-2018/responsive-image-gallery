@@ -6,4 +6,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
     var classes = html.className;
     html.className = classes + ' flexbox';
   }
+  var gallery = document.querySelector('.images');
+  gallery.addEventListener('click',function(e) {
+    if (e.target.tagName !== 'IMG') {
+      return;
+    }
+    var images = document.querySelectorAll('.images li');
+    for (var i=0; i < images.length; i++) {
+      images[i].className = "";
+    }
+    e.target.parentNode.className = "focused";
+  });
 });
