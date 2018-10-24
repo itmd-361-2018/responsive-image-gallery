@@ -49,7 +49,27 @@ img {
 }
 
 @media screen and (min-width: 1000px) {
-  .images li {
-    width: 33.333333333%
+  .images {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
+  .images img {
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+  }
+  .images li {
+    padding: 0;
+    width: auto;
+  }
+  .images li.focus {
+    background: yellow;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+
 }
